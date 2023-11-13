@@ -24,7 +24,7 @@ YELLOW = \033[1;33m
 BLUE = \033[1;34m
 RESET = \033[0m
 
-.c.o:
+.c.o:${NAME}
 	@${CC} ${FLAGS} -c $< -o ${<:.c=.o} -I ${INCS}
 
 ${NAME}: ${OBJS}
